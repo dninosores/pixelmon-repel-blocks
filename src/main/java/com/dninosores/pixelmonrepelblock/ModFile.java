@@ -4,6 +4,8 @@ import com.dninosores.pixelmonrepelblock.blocks.ModBlocks;
 import com.dninosores.pixelmonrepelblock.config.Config;
 import com.pixelmonmod.pixelmon.Pixelmon;
 import com.pixelmonmod.pixelmon.api.config.api.yaml.YamlConfigFactory;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.vector.Vector3d;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -14,7 +16,7 @@ import org.apache.logging.log4j.Logger;
 import com.dninosores.pixelmonrepelblock.listener.SpawnListener;
 
 import java.io.IOException;
-
+import java.util.HashSet;
 
 
 @Mod(ModFile.MOD_ID)
@@ -29,8 +31,12 @@ public class ModFile {
 
     private Config config;
 
+    private static HashSet<Vector3d> spawnBlockLocations;
+
     public ModFile() {
         instance = this;
+
+        spawnBlockLocations = new HashSet<Vector3d>();
 
         reloadConfig();
 
@@ -42,6 +48,18 @@ public class ModFile {
 
         ModBlocks.register(bus);
         MinecraftForge.EVENT_BUS.register(this);
+    }
+
+    public static HashSet<Vector3d> addSpawnBlockLocation(Vector3d vector) {
+        LOGGER.atInfo().log("Spawn Block registered at " + vector);
+        spawnBlockLocations.add(vector);
+        return spawnBlockLocations;
+    }
+
+    public static HashSet<Vector3d> removeSpawnBlockLocation(Vector3d vector) {
+        LOGGER.atInfo().log("Spawn Block removed at " + vector);
+        spawnBlockLocations.remove(vector);
+        return spawnBlockLocations;
     }
 
     public static void onModLoad(FMLCommonSetupEvent event) {

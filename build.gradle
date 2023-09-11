@@ -46,7 +46,7 @@ minecraft {
 
             property 'forge.logging.markers', 'REGISTRIES'
 
-            property 'forge.logging.console.level', 'info'
+            property 'forge.logging.console.level', 'error'
 
             mods {
                 "${mod_id}" {
