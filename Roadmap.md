@@ -1,0 +1,8 @@
+- Art for repel block
+- Crafting recipe for repel block
+- Make sure that repel block drops itself
+- Maybe make it so that repel block works on a chunk-by-chunk basis?
+- Use curios API to make avoidance and repel charms that give the avoidance and repel effects
+- Crafting recipe for the charms
+- Art for the charms
+- Creative tab for added items
