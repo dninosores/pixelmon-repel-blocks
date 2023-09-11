@@ -1,23 +1,17 @@
 package com.dninosores.pixelmonrepelblock;
 
 import com.dninosores.pixelmonrepelblock.blocks.ModBlocks;
-import com.dninosores.pixelmonrepelblock.config.ExampleConfig;
+import com.dninosores.pixelmonrepelblock.config.Config;
 import com.pixelmonmod.pixelmon.Pixelmon;
 import com.pixelmonmod.pixelmon.api.config.api.yaml.YamlConfigFactory;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import com.dninosores.pixelmonrepelblock.listener.PokemonSpawnExampleListener;
+import com.dninosores.pixelmonrepelblock.listener.SpawnListener;
 
 import java.io.IOException;
 
@@ -33,7 +27,7 @@ public class ModFile {
 
     private static ModFile instance;
 
-    private ExampleConfig config;
+    private Config config;
 
     public ModFile() {
         instance = this;
@@ -54,17 +48,19 @@ public class ModFile {
         // Here is how you register a listener for Pixelmon events
         // Pixelmon has its own event bus for its events, as does TCG
         // So any event listener for those mods need to be registered to those specific event buses
-        Pixelmon.EVENT_BUS.register(new PokemonSpawnExampleListener());
+        Pixelmon.EVENT_BUS.register(new SpawnListener());
     }
 
 
     public void reloadConfig() {
         try {
-            this.config = YamlConfigFactory.getInstance(ExampleConfig.class);
+            this.config = YamlConfigFactory.getInstance(Config.class);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+
+
 
     public static ModFile getInstance() {
         return instance;
@@ -74,7 +70,7 @@ public class ModFile {
         return LOGGER;
     }
 
-    public static ExampleConfig getConfig() {
+    public static Config getConfig() {
         return instance.config;
     }
 

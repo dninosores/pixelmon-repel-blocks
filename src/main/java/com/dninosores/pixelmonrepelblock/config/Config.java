@@ -6,15 +6,12 @@ import info.pixelmon.repack.org.spongepowered.objectmapping.ConfigSerializable;
 
 @ConfigSerializable
 @ConfigPath("config/ModId/config.yml")
-public class ExampleConfig extends AbstractYamlConfig {
+public class Config extends AbstractYamlConfig {
 
-    private String exampleField = "Hello World";
+    public int radius = 20;
 
-    public ExampleConfig() {
+    public Config() {
         super();
     }
 
-    public String getExampleField() {
-        return this.exampleField;
-    }
 }
