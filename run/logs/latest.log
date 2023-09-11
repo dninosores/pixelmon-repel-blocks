@@ -1,0 +1,779 @@
+[10Sep2023 20:48:19.876] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20210115.111550, --fml.mcVersion, 1.16.5, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 36.2.34, --assetIndex, 1.16, --assetsDir, C:\Users\olly\.gradle\caches\forge_gradle\assets, --version, MOD_DEV, --username, Dev, --accessToken, ????????, --userProperties, {}]
+[10Sep2023 20:48:19.878] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 8.1.3+8.1.3+main-8.1.x.c94d18ec starting: java version 1.8.0_381 by Oracle Corporation
+[10Sep2023 20:48:20.058] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[10Sep2023 20:48:20.079] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.4 Source=file:/C:/Users/olly/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.4/4ec7d77d9ab32596ca0b78bb123956734767e3a/mixin-0.8.4.jar Service=ModLauncher Env=CLIENT
+[10Sep2023 20:48:21.017] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\olly\.gradle\caches\forge_gradle\assets, --assetIndex, 1.16, --username, Dev, --accessToken, ????????, --userProperties, {}]
+[10Sep2023 20:48:23.126] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[10Sep2023 20:48:23.535] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[10Sep2023 20:48:23.592] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.2.2 build 10
+[10Sep2023 20:48:23.985] [modloading-worker-25/INFO] [Pixelmon/]: Patched lifecycle fields.
+[10Sep2023 20:48:23.985] [modloading-worker-18/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 36.2.34, for MC 1.16.5 with MCP 20210115.111550
+[10Sep2023 20:48:23.987] [modloading-worker-18/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v36.2.34 Initialized
+[10Sep2023 20:48:26.871] [Render thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
+[10Sep2023 20:48:26.915] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, Mod Resources
+[10Sep2023 20:48:26.931] [Worker-Main-11/INFO] [Pixelmon TCG/]: Loading TCG version 9.1.7
+[10Sep2023 20:48:26.931] [Worker-Main-12/INFO] [net.minecraftforge.fml.network.FMLHandshakeHandler/FMLHANDSHAKE]: Registering forge reset packet
+[10Sep2023 20:48:26.931] [Worker-Main-13/INFO] [Pixelmon/]: Loading Pixelmon version 9.1.7
+[10Sep2023 20:48:26.934] [Worker-Main-12/INFO] [net.minecraftforge.fml.network.FMLHandshakeHandler/FMLHANDSHAKE]: Registered forge reset packet
+[10Sep2023 20:48:26.944] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[10Sep2023 20:48:26.992] [Worker-Main-11/INFO] [Pixelmon TCG/]: Initializing Pixelmon TCG v9.1.7
+[10Sep2023 20:48:27.304] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: UP_TO_DATE Current: 36.2.34 Target: null
+[10Sep2023 20:48:27.304] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [pixelmon] Starting version check at https://reforged.gg/forge/update.json
+[10Sep2023 20:48:27.429] [Worker-Main-13/INFO] [Pixelmon/]: Loaded Advancements
+[10Sep2023 20:48:27.451] [Worker-Main-13/INFO] [Pixelmon/]: Started the async storage scheduler.
+[10Sep2023 20:48:27.717] [Worker-Main-14/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:635]: com.pixelmonmod.pixelmon.client.models.smd.GabeNewellException: An error occurred while reading the pixelmon:textures/pokemon/000_missingno/all/base/none/missingno.bmd PQC file on line #11
+[10Sep2023 20:48:27.718] [Worker-Main-14/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:635]: 	at com.pixelmonmod.pixelmon.client.models.smd.ValveStudioModel.loadQC(ValveStudioModel.java:218)
+[10Sep2023 20:48:27.718] [Worker-Main-14/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:635]: 	at com.pixelmonmod.pixelmon.client.models.smd.ValveStudioModel.<init>(ValveStudioModel.java:63)
+[10Sep2023 20:48:27.718] [Worker-Main-14/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:635]: 	at com.pixelmonmod.pixelmon.client.models.smd.ValveStudioModelLoader.loadModel(ValveStudioModelLoader.java:42)
+[10Sep2023 20:48:27.718] [Worker-Main-14/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:635]: 	at com.pixelmonmod.pixelmon.client.models.blocks.GenericSmdModel.reloadModel(GenericSmdModel.java:44)
+[10Sep2023 20:48:27.718] [Worker-Main-14/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:635]: 	at com.pixelmonmod.pixelmon.client.models.blocks.GenericSmdModel.<init>(GenericSmdModel.java:30)
+[10Sep2023 20:48:27.718] [Worker-Main-14/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:635]: 	at com.pixelmonmod.tcg.client.renderers.BattleSpectatorTileEntityRenderer.<init>(BattleSpectatorTileEntityRenderer.java:22)
+[10Sep2023 20:48:27.718] [Worker-Main-14/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:635]: 	at net.minecraftforge.fml.client.registry.ClientRegistry.bindTileEntityRenderer(ClientRegistry.java:49)
+[10Sep2023 20:48:27.718] [Worker-Main-14/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:635]: 	at com.pixelmonmod.tcg.init.registry.TileEntityRegistration.bindRenderers(TileEntityRegistration.java:38)
+[10Sep2023 20:48:27.718] [Worker-Main-14/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:635]: 	at com.pixelmonmod.tcg.proxy.TCGClientProxy.onClientInit(TCGClientProxy.java:38)
+[10Sep2023 20:48:27.718] [Worker-Main-14/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:635]: 	at net.minecraftforge.eventbus.ASMEventHandler_20_TCGClientProxy_onClientInit_FMLClientSetupEvent.invoke(.dynamic)
+[10Sep2023 20:48:27.718] [Worker-Main-14/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:635]: 	at net.minecraftforge.eventbus.ASMEventHandler.invoke(ASMEventHandler.java:85)
+[10Sep2023 20:48:27.718] [Worker-Main-14/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:635]: 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:302)
+[10Sep2023 20:48:27.718] [Worker-Main-14/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:635]: 	at net.minecraftforge.eventbus.EventBus.post(EventBus.java:283)
+[10Sep2023 20:48:27.719] [Worker-Main-14/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:635]: 	at net.minecraftforge.fml.javafmlmod.FMLModContainer.acceptEvent(FMLModContainer.java:120)
+[10Sep2023 20:48:27.719] [Worker-Main-14/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:635]: 	at net.minecraftforge.fml.ModContainer.lambda$buildTransitionHandler$4(ModContainer.java:121)
+[10Sep2023 20:48:27.719] [Worker-Main-14/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:635]: 	at java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1640)
+[10Sep2023 20:48:27.719] [Worker-Main-14/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:635]: 	at java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1632)
+[10Sep2023 20:48:27.719] [Worker-Main-14/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:635]: 	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+[10Sep2023 20:48:27.719] [Worker-Main-14/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:635]: 	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1067)
+[10Sep2023 20:48:27.719] [Worker-Main-14/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:635]: 	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1703)
+[10Sep2023 20:48:27.719] [Worker-Main-14/INFO] [STDERR/]: [java.lang.Throwable:printStackTrace:635]: 	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:172)
+[10Sep2023 20:48:27.719] [Worker-Main-14/INFO] [STDERR/]: [com.pixelmonmod.pixelmon.client.models.smd.GabeNewellException:printStackTrace:34]: Caused by: java.lang.NullPointerException
+[10Sep2023 20:48:27.719] [Worker-Main-14/INFO] [STDERR/]: [com.pixelmonmod.pixelmon.client.models.smd.GabeNewellException:printStackTrace:34]: 	at com.pixelmonmod.pixelmon.client.models.smd.ValveStudioModel.loadQC(ValveStudioModel.java:178)
+[10Sep2023 20:48:27.719] [Worker-Main-14/INFO] [STDERR/]: [com.pixelmonmod.pixelmon.client.models.smd.GabeNewellException:printStackTrace:34]: 	... 20 more
+[10Sep2023 20:48:27.719] [Worker-Main-14/INFO] [STDERR/]: [com.pixelmonmod.pixelmon.client.models.smd.GabeNewellException:printStackTrace:36]: Hopefully, it will have been worth the weight.
+[10Sep2023 20:48:27.774] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [pixelmon] Found status: UP_TO_DATE Current: 9.1.7 Target: null
+[10Sep2023 20:48:27.777] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [tcg] Starting version check at https://reforged.gg/forge/update.json
+[10Sep2023 20:48:27.818] [pixelmon_extras_contact_0/INFO] [Pixelmon/]: Query response: groups[5, 21, 39, 43, 44, 53, 45, 47, 48, 56, 62, 63, 64, 65, 66, 67, 68, 69, 71, 72, 73, 74, 75, 76, 77, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 91] colors[0, 0, 0]
+[10Sep2023 20:48:27.875] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [tcg] Found status: UP_TO_DATE Current: 9.1.7 Target: null
+[10Sep2023 20:48:28.295] [Worker-Main-10/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'pixelmon:block/hidden' referenced from: pixelmon:temporary_light#: java.io.FileNotFoundException: pixelmon:models/block/hidden.json
+[10Sep2023 20:48:28.335] [Worker-Main-10/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'pixelmon:block/mug' referenced from: pixelmon:mug_base#facing=north: java.io.FileNotFoundException: pixelmon:models/block/mug.json
+[10Sep2023 20:48:28.340] [Worker-Main-10/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'minecraft:block' referenced from: pixelmon:poke_display#down=true,facing=north,return=true,waterlogged=true: java.io.FileNotFoundException: minecraft:models/block.json
+[10Sep2023 20:48:28.579] [Worker-Main-10/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'tcg:battle_spectator#inventory' referenced from: tcg:battle_spectator#inventory: java.io.FileNotFoundException: tcg:models/item/battle_spectator.json
+[10Sep2023 20:48:28.611] [Worker-Main-10/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'pixelmon:christmas_ball#inventory' referenced from: pixelmon:christmas_ball#inventory: java.io.FileNotFoundException: pixelmon:models/item/christmas_ball.json
+[10Sep2023 20:48:28.611] [Worker-Main-10/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Unable to load model: 'pixelmon:christmas_ball_lid#inventory' referenced from: pixelmon:christmas_ball_lid#inventory: java.io.FileNotFoundException: pixelmon:models/item/christmas_ball_lid.json
+[10Sep2023 20:48:29.123] [Worker-Main-11/ERROR] [net.minecraft.client.renderer.texture.AtlasTexture/]: Using missing texture, unable to load pixelmon:textures/block/orbs/delta_orb.png : java.io.FileNotFoundException: pixelmon:textures/block/orbs/delta_orb.png
+[10Sep2023 20:48:29.168] [Worker-Main-12/ERROR] [net.minecraft.client.renderer.texture.AtlasTexture/]: Using missing texture, unable to load minecraft:textures/blocks/obsidian.png : java.io.FileNotFoundException: minecraft:textures/blocks/obsidian.png
+[10Sep2023 20:48:29.175] [Worker-Main-8/ERROR] [net.minecraft.client.renderer.texture.AtlasTexture/]: Using missing texture, unable to load minecraft:textures/blocks/diamond_block.png : java.io.FileNotFoundException: minecraft:textures/blocks/diamond_block.png
+[10Sep2023 20:48:29.213] [Worker-Main-13/ERROR] [net.minecraft.client.renderer.texture.AtlasTexture/]: Using missing texture, unable to load minecraft:textures/blocks/beacon.png : java.io.FileNotFoundException: minecraft:textures/blocks/beacon.png
+[10Sep2023 20:48:29.236] [Worker-Main-11/ERROR] [net.minecraft.client.renderer.texture.AtlasTexture/]: Using missing texture, unable to load minecraft:textures/blocks/anvil_base.png : java.io.FileNotFoundException: minecraft:textures/blocks/anvil_base.png
+[10Sep2023 20:48:29.288] [Worker-Main-10/WARN] [net.minecraft.client.renderer.texture.AtlasTexture/]: Texture pixelmon:items/drowned/drowned_world_teleporter with size 13x13 limits mip level from 4 to 0
+[10Sep2023 20:48:30.561] [Render thread/INFO] [net.minecraft.client.audio.SoundSystem/]: OpenAL initialized.
+[10Sep2023 20:48:30.562] [Render thread/INFO] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Sound engine started
+[10Sep2023 20:48:30.654] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 4096x4096x4 minecraft:textures/atlas/blocks.png-atlas
+[10Sep2023 20:48:30.688] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[10Sep2023 20:48:30.692] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[10Sep2023 20:48:30.692] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[10Sep2023 20:48:30.693] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[10Sep2023 20:48:30.693] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[10Sep2023 20:48:30.693] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[10Sep2023 20:48:31.149] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[10Sep2023 20:48:31.150] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[10Sep2023 20:48:31.151] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[10Sep2023 20:48:31.368] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
+[10Sep2023 20:48:34.959] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [spectate, ] and [spectate, target] with inputs: [words with spaces, "and symbols", word]
+[10Sep2023 20:48:34.960] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [spectate, target] and [spectate, ] with inputs: [Player, 0123, @e, @e[type=foo], dd12be42-52a9-4a91-a8a1-11c01849e498]
+[10Sep2023 20:48:34.961] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[10Sep2023 20:48:34.961] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[10Sep2023 20:48:34.962] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[10Sep2023 20:48:34.962] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[10Sep2023 20:48:34.962] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[10Sep2023 20:48:35.000] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, forge-1.16.5-36.2.34_mapped_official_1.16.5-recomp.jar, Pixelmon-1.16.5-9.1.7-universal-9.1.7_mapped_official_1.16.5.jar, main
+[10Sep2023 20:48:36.720] [Render thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 8 recipes
+[10Sep2023 20:48:36.962] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1969 advancements
+[10Sep2023 20:48:37.213] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:37.213] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:37.213] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.213] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.218] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.223] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.223] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:37.223] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.227] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.231] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.231] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.233] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.234] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.234] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.236] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.248] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:37.248] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:37.248] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.252] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:37.252] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.261] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.264] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:37.265] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.272] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:37.272] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:37.272] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.276] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.276] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.276] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:37.276] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.277] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.277] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.282] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:37.282] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.285] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.285] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:37.285] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.285] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.285] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:37.285] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.291] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.292] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.292] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.293] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:37.293] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.293] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:37.293] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.295] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.295] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.299] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.299] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:37.299] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.300] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.300] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:37.300] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.301] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.301] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:37.301] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.301] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.301] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.305] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.305] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:37.305] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.310] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.311] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.311] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:37.311] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.312] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.312] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.316] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:37.316] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.317] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.318] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:37.318] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:37.318] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.319] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.323] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:37.323] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.324] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.324] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:37.324] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.325] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.329] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.329] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.331] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.332] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.334] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.334] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.335] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:37.335] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.335] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.340] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.340] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.341] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.341] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.341] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.341] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:37.341] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.342] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:37.342] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.342] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.342] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:37.342] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.345] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.349] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.353] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:37.353] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:37.353] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.355] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.356] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.356] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.356] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.357] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.357] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.363] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:37.364] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.367] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.368] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:37.368] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:37.368] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.379] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:37.379] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.383] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.383] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.392] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.395] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.395] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:37.395] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.402] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.402] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.405] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.406] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.409] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.410] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:37.410] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.410] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.411] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:37.411] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:37.411] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.411] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.411] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.421] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:37.421] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.425] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:37.425] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.427] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.427] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:37.427] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.428] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.433] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:37.433] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.433] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:37.433] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.434] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:37.434] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:37.434] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:37.434] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.434] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.434] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.436] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:37.436] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.436] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:37.436] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.441] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.446] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.452] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.452] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.452] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:37.452] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.452] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.452] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:37.452] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.454] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.454] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:37.454] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.457] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.459] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.464] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:37.464] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.465] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:37.465] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.466] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.475] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.475] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.476] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.476] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.476] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.476] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.476] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.476] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.479] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.479] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.479] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.479] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.484] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.484] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.486] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:37.486] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.486] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.488] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:37.488] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:37.488] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.494] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.494] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:37.494] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:37.611] [Render thread/INFO] [Pixelmon/]: Registering Better Spawner.
+[10Sep2023 20:48:37.668] [Render thread/INFO] [Pixelmon/]: Registering trades.
+[10Sep2023 20:48:37.675] [Render thread/INFO] [Pixelmon/]: Registering shop items.
+[10Sep2023 20:48:38.381] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[10Sep2023 20:48:38.811] [Render thread/ERROR] [net.minecraft.util.registry.WorldSettingsImport/]: Error adding element: Base value out of range: 10 [0-8]
+[10Sep2023 20:48:38.811] [Render thread/ERROR] [net.minecraft.util.registry.WorldSettingsImport/]: Error adding element: Base value out of range: 10 [0-8]
+[10Sep2023 20:48:38.846] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [spectate, ] and [spectate, target] with inputs: [words with spaces, "and symbols", word]
+[10Sep2023 20:48:38.846] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [spectate, target] and [spectate, ] with inputs: [Player, 0123, @e, @e[type=foo], dd12be42-52a9-4a91-a8a1-11c01849e498]
+[10Sep2023 20:48:38.846] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[10Sep2023 20:48:38.847] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[10Sep2023 20:48:38.847] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[10Sep2023 20:48:38.847] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[10Sep2023 20:48:38.847] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[10Sep2023 20:48:38.848] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, forge-1.16.5-36.2.34_mapped_official_1.16.5-recomp.jar, Pixelmon-1.16.5-9.1.7-universal-9.1.7_mapped_official_1.16.5.jar, main
+[10Sep2023 20:48:40.508] [Render thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 8 recipes
+[10Sep2023 20:48:40.696] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 1969 advancements
+[10Sep2023 20:48:40.723] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:40.723] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:40.723] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.724] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.727] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.728] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.728] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:40.728] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.731] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.732] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.732] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.734] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.734] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.734] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.736] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.744] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:40.744] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:40.744] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.747] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:40.747] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.753] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.757] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:40.757] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.764] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:40.764] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:40.764] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.767] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.767] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.767] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:40.767] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.768] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.768] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.772] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:40.772] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.773] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.773] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:40.773] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.774] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.774] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:40.774] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.779] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.779] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.779] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.780] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:40.780] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.781] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:40.781] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.781] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.782] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.784] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.784] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:40.784] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.785] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.785] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:40.785] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.786] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.786] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:40.786] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.786] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.786] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.790] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.790] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:40.790] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.795] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.795] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.795] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:40.795] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.797] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.797] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.801] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:40.801] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.801] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.803] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:40.803] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:40.803] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.803] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.807] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:40.807] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.808] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.808] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:40.808] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.808] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.812] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.812] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.814] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.815] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.817] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.817] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.817] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:40.817] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.818] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.823] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.824] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.824] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.824] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.824] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.824] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:40.824] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.825] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:40.825] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.825] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.825] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:40.825] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.828] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.831] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.835] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:40.835] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:40.835] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.837] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.837] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.837] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.838] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.839] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.839] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.845] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:40.845] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.846] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.847] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:40.847] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:40.847] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.856] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:40.856] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.860] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.860] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.868] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.871] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.871] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:40.871] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.878] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.878] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.880] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.881] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.885] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.885] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:40.885] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.885] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.886] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:40.886] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:40.886] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.886] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.886] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.895] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:40.895] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.899] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:40.899] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.901] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.901] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:40.901] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.901] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.906] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:40.906] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.906] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:40.906] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.907] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:40.907] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:40.907] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:40.907] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.907] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.907] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.908] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:40.908] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.909] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:40.909] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.913] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.970] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.975] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.976] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.976] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:40.976] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.976] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.976] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:40.976] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.978] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.978] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:40.978] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.981] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.982] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.987] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:40.987] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.988] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:40.988] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.989] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.996] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.996] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.997] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.997] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.997] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.997] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:40.997] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:40.997] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:41.000] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:41.000] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:41.000] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:41.000] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:41.005] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:41.005] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:41.006] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:41.007] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:41.007] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:41.008] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:41.008] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:41.009] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:41.014] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:41.015] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:41.015] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:41.066] [Render thread/INFO] [Pixelmon/]: Registering Better Spawner.
+[10Sep2023 20:48:41.102] [Render thread/INFO] [Pixelmon/]: Registering trades.
+[10Sep2023 20:48:41.108] [Render thread/INFO] [Pixelmon/]: Registering shop items.
+[10Sep2023 20:48:41.654] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[10Sep2023 20:48:42.394] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[10Sep2023 20:48:42.407] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Starting integrated minecraft server version 1.16.5
+[10Sep2023 20:48:42.407] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[10Sep2023 20:48:42.497] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[10Sep2023 20:48:42.786] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 0%
+[10Sep2023 20:48:43.469] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 83%
+[10Sep2023 20:48:43.535] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Preparing spawn area: 99%
+[10Sep2023 20:48:43.540] [Server thread/INFO] [Pixelmon/]: Datapacks found: vanilla,mod:forge,mod:pixelmon,mod:pixelmonrepelblock
+[10Sep2023 20:48:43.568] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Time elapsed: 1051 ms
+[10Sep2023 20:48:43.611] [Server thread/WARN] [net.minecraftforge.eventbus.EventBus/EVENTBUS]: Attempting to add a Lambda listener with computed generic type of Event. Are you sure this is what you meant? NOTE : there are complex lambda forms where the generic type information is erased and cannot be recovered at runtime.
+[10Sep2023 20:48:43.612] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Changing view distance to 11, from 10
+[10Sep2023 20:48:44.193] [Netty Local Client IO #0/INFO] [net.minecraftforge.fml.network.NetworkHooks/]: Connected to a modded server.
+[10Sep2023 20:48:44.210] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@2cc233fa
+[10Sep2023 20:48:44.217] [Netty Local Client IO #0/ERROR] [net.minecraft.util.registry.WorldSettingsImport/]: Error adding element: Base value out of range: 10 [0-8]
+[10Sep2023 20:48:44.217] [Netty Local Client IO #0/ERROR] [net.minecraft.util.registry.WorldSettingsImport/]: Error adding element: Base value out of range: 10 [0-8]
+[10Sep2023 20:48:44.220] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: Dev[local:E:c7bd12c5] logged in with entity id 93 at (-373.78023311862637, 74.52045614706647, -502.6382373517436)
+[10Sep2023 20:48:44.252] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[10Sep2023 20:48:44.285] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ?Pixelmon Dev? Dev has joined!
+[10Sep2023 20:48:44.453] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[10Sep2023 20:48:44.459] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[10Sep2023 20:48:44.580] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.580] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.584] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.584] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.586] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.586] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:44.586] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.586] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.586] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:44.586] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.589] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.589] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:44.589] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.589] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.589] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.589] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[10Sep2023 20:48:44.589] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.589] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:44.589] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.590] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.590] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.590] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[10Sep2023 20:48:44.590] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/pixelmon:ultra_space
+[10Sep2023 20:48:44.590] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/pixelmon:drowned_world
+[10Sep2023 20:48:44.598] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.598] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.598] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.598] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.598] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.598] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:44.598] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.601] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.607] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.608] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.608] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:44.608] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.609] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.610] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:44.610] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.610] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.610] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.611] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.611] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:44.611] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.611] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.620] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.622] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:44.622] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.622] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.624] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.624] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:44.624] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.625] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.625] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.626] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.642] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.642] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.642] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:44.642] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.643] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.644] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.644] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.645] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.645] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.648] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.648] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.650] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:44.650] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.654] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:44.655] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.656] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:44.656] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.657] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:44.657] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.675] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.675] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:44.675] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.675] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.675] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.678] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.679] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.680] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.680] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.681] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:44.681] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.688] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.688] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.688] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:44.688] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:44.688] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.689] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.690] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:44.690] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.692] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.704] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:44.704] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.705] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.706] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.708] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.708] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.709] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.710] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.710] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:44.710] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.716] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:44.716] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.720] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:44.720] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.723] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.729] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.729] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:44.729] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:44.729] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:44.729] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.730] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.730] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.730] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.735] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.737] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:44.737] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.738] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.739] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.744] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.744] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.746] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:44.746] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:44.746] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.746] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:44.746] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.747] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:44.747] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:44.747] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.760] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:44.760] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:44.760] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.760] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:44.760] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.761] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:44.761] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.762] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.763] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.765] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.768] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:44.768] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:44.769] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.770] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:44.770] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:44.770] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.771] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:44.771] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Snowscape
+[10Sep2023 20:48:44.771] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.773] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:44.773] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.774] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.779] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.779] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:44.779] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.779] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.780] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.781] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.789] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.790] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.792] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.792] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.795] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.796] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.797] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.797] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.802] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:44.802] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.805] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:44.805] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.806] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:44.806] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.810] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.810] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.821] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.821] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.825] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:44.825] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.825] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.828] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.828] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:44.828] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.832] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.834] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.834] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:44.834] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.834] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.834] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.841] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.841] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.846] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:44.846] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.850] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:44.850] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.850] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.850] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:44.850] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.851] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.851] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Pounce
+[10Sep2023 20:48:44.851] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.852] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.855] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:44.855] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.856] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Trailblaze
+[10Sep2023 20:48:44.856] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Chilling Water
+[10Sep2023 20:48:44.856] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.860] [Render thread/WARN] [Pixelmon/]: Attack name invalid: Tera Blast
+[10Sep2023 20:48:44.880] [Render thread/INFO] [Pixelmon/]: Registering trades.
+[10Sep2023 20:48:44.886] [Render thread/INFO] [Pixelmon/]: Registering Better Spawner.
+[10Sep2023 20:48:45.050] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] ?Pixelmon Dev? Dev has joined!
+[10Sep2023 20:48:45.053] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 6 advancements
+[10Sep2023 20:49:26.991] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[10Sep2023 20:49:26.993] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[10Sep2023 20:49:27.054] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[10Sep2023 20:49:27.054] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[10Sep2023 20:49:27.055] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/pixelmon:ultra_space
+[10Sep2023 20:49:27.055] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/pixelmon:drowned_world
+[10Sep2023 20:49:27.843] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Dev lost connection: Disconnected
+[10Sep2023 20:49:27.843] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[10Sep2023 20:49:27.846] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Stopping singleplayer server as player logged out
+[10Sep2023 20:49:27.898] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[10Sep2023 20:49:27.898] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[10Sep2023 20:49:27.898] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[10Sep2023 20:49:27.898] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[10Sep2023 20:49:28.077] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
+[10Sep2023 20:49:28.077] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[10Sep2023 20:49:28.077] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[10Sep2023 20:49:28.077] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[10Sep2023 20:49:28.077] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[10Sep2023 20:49:28.077] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/pixelmon:ultra_space
+[10Sep2023 20:49:28.078] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (ultra_space): All chunks are saved
+[10Sep2023 20:49:28.078] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/pixelmon:drowned_world
+[10Sep2023 20:49:28.078] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (drowned_world): All chunks are saved
+[10Sep2023 20:49:28.093] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
+[10Sep2023 20:49:28.110] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[10Sep2023 20:49:28.110] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[10Sep2023 20:49:28.110] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (ultra_space): All chunks are saved
+[10Sep2023 20:49:28.110] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (drowned_world): All chunks are saved
+[10Sep2023 20:49:30.133] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
