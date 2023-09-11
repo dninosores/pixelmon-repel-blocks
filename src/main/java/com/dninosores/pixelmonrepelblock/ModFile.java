@@ -73,6 +73,10 @@ public class ModFile {
         return spawnBlockLocations;
     }
 
+    public static HashSet<Vector3d> getSpawnBlockLocations() {
+        return spawnBlockLocations;
+    }
+
     public static void onModLoad(FMLCommonSetupEvent event) {
         // Here is how you register a listener for Pixelmon events
         // Pixelmon has its own event bus for its events, as does TCG
