@@ -27,6 +27,7 @@ buildNumber.properties
 ## Gradle
 ##############################
 bin/
+run/
 build/
 .gradle
 .gradletasknamecache
