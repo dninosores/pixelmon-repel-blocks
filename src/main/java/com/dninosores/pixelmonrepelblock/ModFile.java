@@ -1,13 +1,17 @@
 package com.dninosores.pixelmonrepelblock;
 
 import com.dninosores.pixelmonrepelblock.blocks.ModBlocks;
+import com.dninosores.pixelmonrepelblock.blocks.RepelBlock;
 import com.dninosores.pixelmonrepelblock.config.Config;
 import com.pixelmonmod.pixelmon.Pixelmon;
 import com.pixelmonmod.pixelmon.api.config.api.yaml.YamlConfigFactory;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.vector.Vector3d;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.event.world.BlockEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -50,15 +54,22 @@ public class ModFile {
         MinecraftForge.EVENT_BUS.register(this);
     }
 
+    @SubscribeEvent
+    public static void onBlockBreak(BlockEvent.BreakEvent event) {
+        if (event.getState().getBlock() instanceof RepelBlock) {
+            removeSpawnBlockLocation(Utils.getPosVec(event.getPos()));
+        }
+    }
+
     public static HashSet<Vector3d> addSpawnBlockLocation(Vector3d vector) {
-        LOGGER.atInfo().log("Spawn Block registered at " + vector);
         spawnBlockLocations.add(vector);
+        LOGGER.atInfo().log("Spawn Block registered at " + vector + " Length: " + spawnBlockLocations.size());
         return spawnBlockLocations;
     }
 
     public static HashSet<Vector3d> removeSpawnBlockLocation(Vector3d vector) {
-        LOGGER.atInfo().log("Spawn Block removed at " + vector);
         spawnBlockLocations.remove(vector);
+        LOGGER.atInfo().log("Spawn Block removed at " + vector + " Length: " + spawnBlockLocations.size());
         return spawnBlockLocations;
     }
 

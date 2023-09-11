@@ -23,7 +23,7 @@ class RepelBlockEntity extends TileEntity {
     }
 }
 
-class RepelBlock extends Block {
+public class RepelBlock extends Block {
 
     public RepelBlock() {
         super(AbstractBlock.Properties.of(Material.BUILDABLE_GLASS));
