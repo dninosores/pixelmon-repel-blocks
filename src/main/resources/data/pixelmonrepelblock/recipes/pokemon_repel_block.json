@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "xxx",
+        " r ",
+        "xxx"
+    ],
+    "key":
+    {
+        "x":
+        {
+            "item":"minecraft:smooth_stone_slab"
+        },
+        "r":
+        {
+            "item": "pixelmon:repel"
+        }
+    },
+    "result":
+    {
+        "item": "pixelmonrepelblock:pokemon_repel_block",
+        "count": 1
+    }
+}
