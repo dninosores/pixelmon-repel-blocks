@@ -20,6 +20,7 @@ import org.apache.logging.log4j.Logger;
 import com.dninosores.pixelmonrepelblock.listener.SpawnListener;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.HashSet;
 
 
@@ -35,12 +36,13 @@ public class ModFile {
 
     private Config config;
 
-    private static HashSet<Vector3d> spawnBlockLocations;
+    // Map of spawn block locations to their associated radii
+    private static HashMap<Vector3d, Integer> spawnBlockLocations;
 
     public ModFile() {
         instance = this;
 
-        spawnBlockLocations = new HashSet<Vector3d>();
+        spawnBlockLocations = new HashMap<Vector3d, Integer>();
 
         reloadConfig();
 
@@ -61,19 +63,19 @@ public class ModFile {
         }
     }
 
-    public static HashSet<Vector3d> addSpawnBlockLocation(Vector3d vector) {
-        spawnBlockLocations.add(vector);
+    public static HashMap<Vector3d, Integer> addSpawnBlockLocation(Vector3d vector, int radius) {
+        spawnBlockLocations.put(vector, radius);
         LOGGER.atInfo().log("Spawn Block registered at " + vector + " Length: " + spawnBlockLocations.size());
         return spawnBlockLocations;
     }
 
-    public static HashSet<Vector3d> removeSpawnBlockLocation(Vector3d vector) {
+    public static HashMap<Vector3d, Integer> removeSpawnBlockLocation(Vector3d vector) {
         spawnBlockLocations.remove(vector);
         LOGGER.atInfo().log("Spawn Block removed at " + vector + " Length: " + spawnBlockLocations.size());
         return spawnBlockLocations;
     }
 
-    public static HashSet<Vector3d> getSpawnBlockLocations() {
+    public static HashMap<Vector3d, Integer> getSpawnBlockLocations() {
         return spawnBlockLocations;
     }
 

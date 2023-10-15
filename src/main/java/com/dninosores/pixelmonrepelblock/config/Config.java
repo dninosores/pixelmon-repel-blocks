@@ -9,7 +9,9 @@ import info.pixelmon.repack.org.spongepowered.objectmapping.ConfigSerializable;
 public class Config extends AbstractYamlConfig {
 
     // Pokemon will not spawn if they are within this many blocks of a spawner
-    public int radius = 20;
+    public int radius = 10;
+    public int radius_super = 20;
+    public int radius_max = 30;
 
     public Config() {
         super();

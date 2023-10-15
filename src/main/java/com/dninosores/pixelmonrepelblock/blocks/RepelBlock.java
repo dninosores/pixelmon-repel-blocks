@@ -19,7 +19,7 @@ class RepelBlockEntity extends TileEntity {
 
     @Override
     public void onLoad() {
-        ModFile.addSpawnBlockLocation(Utils.getPosVec(this.getBlockPos()));
+        ModFile.addSpawnBlockLocation(Utils.getPosVec(this.getBlockPos()), ModFile.getConfig().radius);
     }
 }
 
@@ -27,7 +27,6 @@ public class RepelBlock extends Block {
 
     public RepelBlock() {
         super(AbstractBlock.Properties.of(Material.BUILDABLE_GLASS));
-        ModFile.getLogger().atError().log("CONSTRUCTOR CONSTRUCTOR CONSTRUCTOR COASNTRUONCTOR");
     }
 
     @Override
