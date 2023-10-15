@@ -3,8 +3,8 @@
 	"parent": "block/block",
 	"texture_size": [64, 64],
 	"textures": {
-		"2": "pixelmonrepelblock:block/pokemon_repel_block",
-		"particle": "pixelmonrepelblock:block/pokemon_repel_block"
+		"2": "pixelmonrepelblock:block/pokemon_super_repel_block",
+		"particle": "pixelmonrepelblock:block/pokemon_super_repel_block"
 	},
 	"elements": [
 		{

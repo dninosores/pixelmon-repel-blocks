@@ -1,4 +1,4 @@
-- Art for repel block
+- Art for repel block DONE
 - Crafting recipe for repel block
 - Make sure that repel block drops itself
 - Maybe make it so that repel block works on a chunk-by-chunk basis? Make three tiers

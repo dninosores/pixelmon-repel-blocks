@@ -8,25 +8,29 @@ import net.minecraft.item.Item;
 import net.minecraft.tileentity.ITickableTileEntity;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.TileEntityType;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockReader;
 
 import javax.annotation.Nullable;
 
-class RepelBlockEntity extends TileEntity {
-    public RepelBlockEntity() {
-        super(ModBlocks.REPEL_BLOCK_ENTITY.get());
+abstract class RepelBlockEntity extends TileEntity {
+
+    public RepelBlockEntity(TileEntityType<?> p_i48289_1_) {
+        super(p_i48289_1_);
     }
+
+    abstract int getRadius();
 
     @Override
     public void onLoad() {
-        ModFile.addSpawnBlockLocation(Utils.getPosVec(this.getBlockPos()), ModFile.getConfig().radius);
+        ModFile.addSpawnBlockLocation(Utils.getPosVec(this.getBlockPos()), this.getRadius());
     }
 }
 
-public class RepelBlock extends Block {
+public abstract class RepelBlock extends Block {
 
     public RepelBlock() {
-        super(AbstractBlock.Properties.of(Material.BUILDABLE_GLASS));
+        super(AbstractBlock.Properties.of(Material.GLASS).noOcclusion().lightLevel(s -> 8));
     }
 
     @Override
@@ -36,7 +40,7 @@ public class RepelBlock extends Block {
 
     @Nullable
     @Override
-    public TileEntity createTileEntity(BlockState state, IBlockReader world) {
-        return new RepelBlockEntity();
-    }
+    public abstract TileEntity createTileEntity(BlockState state, IBlockReader world);
 }
+
+

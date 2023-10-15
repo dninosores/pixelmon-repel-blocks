@@ -1,6 +1,3 @@
 {
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "pixelmonrepelblock:block/pokemon_repel_block"
-  }
+	"parent": "pixelmonrepelblock:block/pokemon_repel_block"
 }
