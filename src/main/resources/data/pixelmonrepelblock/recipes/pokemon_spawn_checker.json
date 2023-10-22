@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        " b ",
+        "bfb",
+        " b "
+    ],
+    "key":
+    {
+        "f":
+        {
+            "item":"pixelmon:item_finder"
+        },
+        "b":
+        {
+            "item": "pixelmon:poke_ball"
+        }
+    },
+    "result":
+    {
+        "item": "pixelmonrepelblock:spawn_checker",
+        "count": 1
+    }
+}
