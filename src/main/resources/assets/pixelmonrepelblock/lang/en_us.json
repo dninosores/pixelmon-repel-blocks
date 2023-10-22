@@ -4,5 +4,6 @@
   "block.pixelmonrepelblock.pokemon_max_repel_block": "Max Repel Block",
   "itemGroup.repelBlockTab": "Pokemon Repel Block",
   "item.pixelmonrepelblock.repel_charm": "Repel Charm",
+  "item.pixelmonrepelblock.repel_charm_tooltip": "Prevents pokemon from spawning nearby. Right click to activate.",
   "item.pixelmonrepelblock.spawn_checker": "Pokemon Spawn Checker"
 }
