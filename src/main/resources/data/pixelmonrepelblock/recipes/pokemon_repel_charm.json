@@ -1,0 +1,28 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "xcx",
+        "xrx",
+        "xxx"
+    ],
+    "key":
+    {
+        "x":
+        {
+            "item":"minecraft:obsidian"
+        },
+        "r":
+        {
+            "item": "pixelmon:max_repel"
+        },
+        "c": {
+            "item": "pixelmon:lure_casing_strong"
+        }
+    },
+    "result":
+    {
+        "item": "pixelmonrepelblock:repel_charm",
+        "count": 1
+    }
+}

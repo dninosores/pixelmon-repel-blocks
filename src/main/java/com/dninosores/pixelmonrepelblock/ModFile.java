@@ -3,6 +3,7 @@ package com.dninosores.pixelmonrepelblock;
 import com.dninosores.pixelmonrepelblock.blocks.ModBlocks;
 import com.dninosores.pixelmonrepelblock.blocks.RepelBlock;
 import com.dninosores.pixelmonrepelblock.config.Config;
+import com.dninosores.pixelmonrepelblock.items.ModItems;
 import com.pixelmonmod.pixelmon.Pixelmon;
 import com.pixelmonmod.pixelmon.api.config.api.yaml.YamlConfigFactory;
 import net.minecraft.util.math.BlockPos;
@@ -53,6 +54,7 @@ public class ModFile {
 
 
         ModBlocks.register(bus);
+        ModItems.register(bus);
         MinecraftForge.EVENT_BUS.register(this);
     }
 
