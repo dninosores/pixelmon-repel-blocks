@@ -2,34 +2,23 @@ package com.dninosores.pixelmonrepelblock.items;
 
 import com.dninosores.pixelmonrepelblock.ModFile;
 import com.dninosores.pixelmonrepelblock.blocks.RepelItemGroup;
-import com.pixelmonmod.pixelmon.api.spawning.AbstractSpawner;
-import com.pixelmonmod.pixelmon.api.spawning.SpawnInfo;
-import com.pixelmonmod.pixelmon.entities.effects.RepelEffect;
 import com.pixelmonmod.pixelmon.init.registry.EffectRegistration;
-import com.pixelmonmod.pixelmon.items.LureItem;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemUseContext;
 import net.minecraft.nbt.CompoundNBT;
-import net.minecraft.nbt.INBT;
-import net.minecraft.nbt.IntNBT;
-import net.minecraft.nbt.NumberNBT;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.util.ActionResult;
-import net.minecraft.util.ActionResultType;
+import net.minecraft.util.Hand;
 import net.minecraft.world.World;
-
-import java.lang.reflect.Field;
 
 public class RepelCharm extends Item {
     private final String ACTIVE = "active";
 
     public RepelCharm() {
-        super(new Item.Properties().tab(RepelItemGroup.REPEL_GROUP));
+        super(new Item.Properties().tab(RepelItemGroup.REPEL_GROUP).stacksTo(1));
     }
 
     private CompoundNBT defaultNBT() {
@@ -45,8 +34,11 @@ public class RepelCharm extends Item {
         return newstack;
     }
 
+
+
     @Override
-    public ActionResultType onItemUseFirst(ItemStack stack, ItemUseContext context) {
+    public ActionResult<ItemStack> use(World p_77659_1_, PlayerEntity player, Hand hand) {
+        ItemStack stack = player.getItemInHand(hand);
         ModFile.LOGGER.info("CLICKED");
         CompoundNBT tags = null;
         if (!stack.hasTag() || !stack.getTag().contains(ACTIVE)) {
@@ -58,8 +50,7 @@ public class RepelCharm extends Item {
         stack.setTag(tags);
 
         ModFile.LOGGER.info(tags.getBoolean(ACTIVE));
-
-        return ActionResultType.SUCCESS;
+        return ActionResult.success(stack);
 
     }
 
