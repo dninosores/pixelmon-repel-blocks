@@ -19,6 +19,9 @@ public class ModItems {
     public static final RegistryObject<Item> REPEL_CHARM = ITEMS.register("repel_charm",
             () -> new RepelCharm());
 
+    public static final RegistryObject<Item> SPAWN_CHECKER = ITEMS.register("spawn_checker",
+            () -> new SpawnChecker());
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
