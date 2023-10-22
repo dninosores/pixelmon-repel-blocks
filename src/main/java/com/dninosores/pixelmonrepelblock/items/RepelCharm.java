@@ -32,26 +32,29 @@ public class RepelCharm extends Item {
         super(new Item.Properties().tab(RepelItemGroup.REPEL_GROUP));
     }
 
+    private CompoundNBT defaultNBT() {
+        CompoundNBT nbtTagCompound = new CompoundNBT();
+        nbtTagCompound.putBoolean(ACTIVE, false);
+        return nbtTagCompound;
+    }
+
     @Override
     public ItemStack getDefaultInstance() {
         ItemStack newstack = super.getDefaultInstance();
-        CompoundNBT nbtTagCompound = new CompoundNBT();
-        nbtTagCompound.putBoolean(ACTIVE, false);
-        newstack.setTag(nbtTagCompound);
+        newstack.setTag(this.defaultNBT());
         return newstack;
     }
 
     @Override
     public ActionResultType onItemUseFirst(ItemStack stack, ItemUseContext context) {
         ModFile.LOGGER.info("CLICKED");
-        CompoundNBT tags = stack.getTag();
-        tags.putBoolean(ACTIVE, !tags.getBoolean(ACTIVE));
-
-        if (tags.getBoolean(ACTIVE)) {
-            tags.putString("ench", "something");
-        } else if (tags.contains("ench")){
-            tags.remove("ench");
+        CompoundNBT tags = null;
+        if (!stack.hasTag() || !stack.getTag().contains(ACTIVE)) {
+            tags = defaultNBT();
+        } else {
+            tags = stack.getTag();
         }
+        tags.putBoolean(ACTIVE, !tags.getBoolean(ACTIVE));
         stack.setTag(tags);
 
         ModFile.LOGGER.info(tags.getBoolean(ACTIVE));
@@ -60,12 +63,20 @@ public class RepelCharm extends Item {
 
     }
 
+    public boolean isFoil(ItemStack stack) {
+        if (stack.hasTag() && stack.getTag().contains(ACTIVE)) {
+            return stack.getTag().getBoolean(ACTIVE);
+        }
+        return false;
+    }
+
     @Override
     public void inventoryTick(ItemStack stack, World p_77663_2_, Entity entity, int p_77663_4_, boolean p_77663_5_) {
-        if (stack.getTag().contains(ACTIVE) && stack.getTag().getBoolean(ACTIVE)) {
+        if (stack.hasTag() && stack.getTag().contains(ACTIVE) && stack.getTag().getBoolean(ACTIVE)) {
             if (entity instanceof LivingEntity) {
                 LivingEntity livingEntity = (LivingEntity) entity;
-                livingEntity.addEffect(new EffectInstance(EffectRegistration.REPEL.get(), 5));
+                livingEntity.addEffect(new EffectInstance(EffectRegistration.REPEL.get(), 160));
+
             }
         }
     }
