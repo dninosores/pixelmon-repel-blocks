@@ -50,7 +50,6 @@ public class RepelCharm extends Item {
     @Override
     public ActionResult<ItemStack> use(World p_77659_1_, PlayerEntity player, Hand hand) {
         ItemStack stack = player.getItemInHand(hand);
-        ModFile.LOGGER.info("CLICKED");
         CompoundNBT tags = null;
         if (!stack.hasTag() || !stack.getTag().contains(ACTIVE)) {
             tags = defaultNBT();
@@ -59,8 +58,7 @@ public class RepelCharm extends Item {
         }
         tags.putBoolean(ACTIVE, !tags.getBoolean(ACTIVE));
         stack.setTag(tags);
-
-        ModFile.LOGGER.info(tags.getBoolean(ACTIVE));
+        
         return ActionResult.success(stack);
 
     }

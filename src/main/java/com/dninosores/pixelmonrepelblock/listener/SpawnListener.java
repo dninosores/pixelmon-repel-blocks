@@ -23,7 +23,7 @@ public class SpawnListener {
             public boolean fits(AbstractSpawner abstractSpawner, SpawnInfo spawnInfo, SpawnLocation spawnLocation) {
                 for (Map.Entry<Vector3d, Integer> entry : ModFile.getSpawnBlockLocations().entrySet()) {
                     if (Utils.inCube(entry.getValue(), entry.getKey(), Utils.getPosVec(spawnLocation.location.pos.immutable()))) {
-                        ModFile.LOGGER.atInfo().log("Repel block prevented pokemon spawn at " + Utils.getPosVec(spawnLocation.location.pos.immutable()));
+                        //ModFile.LOGGER.atInfo().log("Repel block prevented pokemon spawn at " + Utils.getPosVec(spawnLocation.location.pos.immutable()));
                         return false;
                     }
                 }

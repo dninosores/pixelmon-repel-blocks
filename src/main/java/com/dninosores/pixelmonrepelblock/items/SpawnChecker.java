@@ -19,7 +19,7 @@ import java.util.Map;
 
 public class SpawnChecker extends Item {
     public SpawnChecker() {
-        super(new Properties().tab(RepelItemGroup.REPEL_GROUP));
+        super(new Properties().tab(RepelItemGroup.REPEL_GROUP).stacksTo(1));
     }
 
     @Override

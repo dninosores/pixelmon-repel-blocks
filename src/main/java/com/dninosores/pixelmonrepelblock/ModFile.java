@@ -67,13 +67,13 @@ public class ModFile {
 
     public static HashMap<Vector3d, Integer> addSpawnBlockLocation(Vector3d vector, int radius) {
         spawnBlockLocations.put(vector, radius);
-        LOGGER.atInfo().log("Spawn Block registered at " + vector + " Length: " + spawnBlockLocations.size());
+        LOGGER.atDebug().log("Spawn Block registered at " + vector + " Length: " + spawnBlockLocations.size());
         return spawnBlockLocations;
     }
 
     public static HashMap<Vector3d, Integer> removeSpawnBlockLocation(Vector3d vector) {
         spawnBlockLocations.remove(vector);
-        LOGGER.atInfo().log("Spawn Block removed at " + vector + " Length: " + spawnBlockLocations.size());
+        LOGGER.atDebug().log("Spawn Block removed at " + vector + " Length: " + spawnBlockLocations.size());
         return spawnBlockLocations;
     }
 
