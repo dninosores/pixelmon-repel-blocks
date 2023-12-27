@@ -7,5 +7,21 @@ pokemon are able to spawn at your location.
 
 ![screenshot](screenshot.png)
 
-Roadmap:
-- Make it so that spawn checker can cycle through all existing pokemon spawners with shift-right click so you can check legendary and fishing spawns too
+You can specify what types of spawns are checked in the config. By default
+it allows you to check all possible spawns, but there are some spawns (like tall grass)
+that don't occur naturally and so you might want to exclude them from the list of
+spawners. Here's the config entry for all natural spawns:
+
+```YAML
+spawner-names:
+- PLAYER
+- legendary
+- megaboss
+- fishing
+- headbutt
+- rocksmash
+- seaweed
+- sweetscent
+- forage
+- curry
+```
