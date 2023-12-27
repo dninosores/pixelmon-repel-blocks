@@ -106,7 +106,8 @@ public class SpawnChecker extends Item {
                         spawnerName = player.getName().getString();
                     }
                     AbstractSpawner spawner = PixelmonSpawning.coordinator.getSpawner(spawnerName);
-                    spawner.checkSpawns.checkSpawns(spawner, player.createCommandSourceStack().withLevel((ServerWorld) player.level),
+                    spawner.checkSpawns.checkSpawns(spawner, player.createCommandSourceStack().withLevel((ServerWorld) player.level)
+                                    .withPermission(4),
                             Arrays.asList(player.getName().getString()));
                 }
 
