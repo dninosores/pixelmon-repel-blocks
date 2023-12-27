@@ -17,6 +17,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
 import net.minecraft.world.server.ServerWorld;
@@ -96,23 +97,33 @@ public class SpawnChecker extends Item {
                 String newKey = cycleSpawner(stack).toUpperCase();
                 player.sendMessage(new StringTextComponent(String.format("Spawn Check Mode: " + newKey)), player.getUUID());
             } else {
-                boolean blocked = false;
-                for (Map.Entry<Vector3d, Integer> entry : ModFile.getSpawnBlockLocations().entrySet()) {
-                    if (Utils.inCube(entry.getValue(), entry.getKey(), player.position())) {
-                        player.sendMessage(new StringTextComponent(String.format("Spawning blocked by repel block at: (%s, %s, %s)",
-                                entry.getKey().x, entry.getKey().y, entry.getKey().z)), player.getUUID());
-                        blocked = true;
-                    }
-                }
-                if (!blocked) {
+                player.sendMessage(new StringTextComponent(String.format("Checking spawns for: " +
+                        getCurrentSpawner(stack).toUpperCase())).withStyle(TextFormatting.DARK_GREEN).withStyle(TextFormatting.BOLD),
+                        player.getUUID());
+                if (true) {
                     String spawnerName = getCurrentSpawner(stack);
                     if (spawnerName.equals(ModFile.PLAYER_SPAWNER_CODE)) {
                         spawnerName = player.getName().getString();
                     }
                     AbstractSpawner spawner = PixelmonSpawning.coordinator.getSpawner(spawnerName);
-                  spawner.checkSpawns.checkSpawns(spawner, player.createCommandSourceStack().withLevel((ServerWorld) player.level),
-                          Arrays.asList(player.getName().getString()));
+                    spawner.checkSpawns.checkSpawns(spawner, player.createCommandSourceStack().withLevel((ServerWorld) player.level),
+                            Arrays.asList(player.getName().getString()));
                 }
+
+                boolean blocked = false;
+
+                if (!Arrays.asList(ModFile.getConfig().bypass_repels).contains(getCurrentSpawner(stack))) {
+                    for (Map.Entry<Vector3d, Integer> entry : ModFile.getSpawnBlockLocations().entrySet()) {
+                        if (Utils.inCube(entry.getValue(), entry.getKey(), player.position())) {
+                            player.sendMessage(new StringTextComponent(String.format("Spawning blocked by repel block at: (%s, %s, %s)",
+                                    entry.getKey().x, entry.getKey().y, entry.getKey().z)), player.getUUID());
+                            blocked = true;
+                        }
+                    }
+                }
+
+
+
             }
         }
         return ActionResult.success(stack);

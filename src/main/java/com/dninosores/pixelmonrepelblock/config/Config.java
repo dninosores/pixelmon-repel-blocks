@@ -17,6 +17,9 @@ public class Config extends AbstractYamlConfig {
     public String[] spawner_names = new String[]{ModFile.PLAYER_SPAWNER_CODE, "legendary", "megaboss", "fishing",
             "caverock", "grass", "headbutt", "rocksmash", "seaweed", "tallgrass", "sweetscent", "forage", "curry"};
 
+    public String[] bypass_repels = new String[]{"megaboss", "fishing",
+          "headbutt", "rocksmash", "seaweed", "sweetscent", "forage", "curry"};
+
     public Config() {
         super();
     }
