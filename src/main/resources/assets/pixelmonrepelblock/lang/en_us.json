@@ -5,5 +5,6 @@
   "itemGroup.repelBlockTab": "Pokemon Repel Block",
   "item.pixelmonrepelblock.repel_charm": "Repel Charm",
   "item.pixelmonrepelblock.repel_charm_tooltip": "Prevents pokemon from spawning nearby. Right click to activate.",
-  "item.pixelmonrepelblock.spawn_checker": "Pokemon Spawn Checker"
+  "item.pixelmonrepelblock.spawn_checker": "Pokemon Spawn Checker",
+  "item.pixelmonrepelblock.spawn_checker_tooltip": "Sneak-right click to cycle spawn types"
 }

@@ -31,6 +31,8 @@ public class ModFile {
 
     public static final String MOD_ID = "pixelmonrepelblock";
 
+    public static final String PLAYER_SPAWNER_CODE = "PLAYER";
+
     public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
 
     private static ModFile instance;
