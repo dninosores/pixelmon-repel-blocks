@@ -6,3 +6,6 @@ pokemon are able to spawn at your location.
 [Download Here](https://github.com/dninosores/pixelmon-repel-blocks/releases/latest)
 
 ![screenshot](screenshot.png)
+
+Roadmap:
+- Make it so that spawn checker can cycle through all existing pokemon spawners with shift-right click so you can check legendary and fishing spawns too

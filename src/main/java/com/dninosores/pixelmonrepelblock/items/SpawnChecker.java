@@ -4,6 +4,8 @@ import com.dninosores.pixelmonrepelblock.ModFile;
 import com.dninosores.pixelmonrepelblock.Utils;
 import com.dninosores.pixelmonrepelblock.blocks.RepelItemGroup;
 import com.pixelmonmod.pixelmon.api.spawning.AbstractSpawner;
+import com.pixelmonmod.pixelmon.command.impl.CheckSpawnsCommand;
+import com.pixelmonmod.pixelmon.spawning.LegendarySpawner;
 import com.pixelmonmod.pixelmon.spawning.PixelmonSpawning;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -15,6 +17,7 @@ import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.world.World;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Map;
 
 public class SpawnChecker extends Item {
@@ -37,7 +40,24 @@ public class SpawnChecker extends Item {
 
             if (!blocked) {
                 AbstractSpawner spawner = PixelmonSpawning.coordinator.getSpawner(player.getName().getString());
-                spawner.checkSpawns.checkSpawns(spawner, player.createCommandSourceStack(), new ArrayList<>());
+                //AbstractSpawner spawner = PixelmonSpawning.coordinator.getSpawner("legendary");
+                // The wild spawn spawner is the player's username I think
+                for (AbstractSpawner abstractSpawner : PixelmonSpawning.coordinator.spawners) {
+                    ModFile.LOGGER.info(abstractSpawner.name);
+                    if (abstractSpawner.name.equals("curry")) {
+                        continue;
+                    }
+//                    if ( abstractSpawner instanceof LegendarySpawner) {
+//                        LegendarySpawner lspawner = (LegendarySpawner) abstractSpawner;
+//                        lspawner.checkSpawns.checkSpawns();
+//                    }
+                    abstractSpawner.checkSpawns.checkSpawns(abstractSpawner, player.createCommandSourceStack(),
+                            Arrays.asList(player.getName().getString()));
+                }
+
+//                spawner.checkSpawns.checkSpawns(spawner, player.createCommandSourceStack(), new ArrayList<>());
+//                spawner.checkSpawns.checkSpawns(PixelmonSpawning.coordinator.getSpawner("fishing"),
+//                        player.createCommandSourceStack(), new ArrayList<>());
             }
         }
         return ActionResult.success(stack);
